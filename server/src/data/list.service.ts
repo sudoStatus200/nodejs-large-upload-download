@@ -3,8 +3,8 @@ import { readdirSync } from 'fs';
 
 @Injectable()
 export class ListService {
-    getFilesList(): string[] {
-    const files: string[] =  readdirSync("../data"); 
-    return files
+  getFilesList(): string[] {
+    const files: string[] = readdirSync('../data');
+    return files;
   }
 }
