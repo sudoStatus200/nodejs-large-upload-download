@@ -6,7 +6,7 @@ export class ListController {
   constructor(private readonly listService: ListService) {}
 
   @Get()
-  getHello(): string {
-    return this.listService.getHello();
+  getFilesList(): string[] {
+    return this.listService.getFilesList();
   }
 }

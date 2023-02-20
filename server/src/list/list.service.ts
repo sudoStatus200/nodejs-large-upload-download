@@ -1,8 +1,10 @@
 import { Injectable } from '@nestjs/common';
+import { readdirSync } from 'fs';
 
 @Injectable()
 export class ListService {
-  getHello(): string {
-    return 'Hello World!';
+    getFilesList(): string[] {
+    const files: string[] =  readdirSync("../data"); 
+    return files
   }
 }
